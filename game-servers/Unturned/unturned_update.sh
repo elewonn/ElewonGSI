@@ -1,7 +1,9 @@
 #!/bin/bash
 set -e
+source <(curl -sSL https://download.elewon.net/colors/colors.sh) > /dev/null 2>&1
 
-echo "🚀 Updating Unturned Server..."
 sudo apt update && sudo apt upgrade -y
+clear
+echo -e "${GRAY}[${YELLOW}INFO${GRAY}] Updating Unturned Server..."
 ~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit
-echo "🚀 Unturned Server Update Complete..."
+echo -e "${GRAY}[${GREEN}OK${GRAY}] Unturned Server Update Complete..."
