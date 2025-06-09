@@ -41,8 +41,11 @@ sudo chmod +x unturned_server.sh
 ## 🚀 Update Server
 
 ```bash
+# ✅ We open the server file
 
 cd Unturned
+
+# ✅ We run the script that facilitates our update.
 
 ./unturned_update.sh
 
