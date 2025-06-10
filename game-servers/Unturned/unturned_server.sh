@@ -22,19 +22,19 @@ echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Preparing installation fo
 mkdir -p ~/Unturned > /dev/null 2>&1
 mkdir -p ~/Unturned/steamcmd > /dev/null 2>&1
 mkdir -p ~/Unturned/unturned_server > /dev/null 2>&1
-echo -e "${GRAY}[${GREEN}OK${GRAY}] Installation folders are ready....${NC}"
+echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}Installation folders are ready....${NC}"
 sleep 1
 echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Downloading required libraries...${NC}"
 sudo dpkg --add-architecture i386 > /dev/null 2>&1
 sudo apt install -y lib32gcc-s1 curl wget tar ca-certificates > /dev/null 2>&1
-echo -e "${GRAY}[${GREEN}OK${GRAY}] Required libraries have been downloaded...${NC}"
+echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}Required libraries have been downloaded...${NC}"
 sleep 1
 echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Downloading SteamCMD...${NC}"
 cd ~/Unturned/steamcmd > /dev/null 2>&1
 if [ ! -f steamcmd.sh ]; then > /dev/null 2>&1
     wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz > /dev/null 2>&1
     tar -xvzf steamcmd_linux.tar.gz > /dev/null 2>&1
-    echo -e "${GRAY}[${GREEN}OK${GRAY}] SteamCMD has been downloaded...${NC}"
+    echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}SteamCMD has been downloaded...${NC}"
 else
     echo -e "${RED}SteamCMD already exists, it is skipped.${NC}"
 fi
