@@ -45,7 +45,7 @@ We welcome issues, feedback, and pull requests to help improve the project.
 - Internet connection
 
 ## ⚖️ License
-This project is fully open source under the MIT License.
+This project is fully open source under the MIT License. <br>
 All scripts are free to use, modify, or integrate into your own hosting solution. <br>
 
 <p align="center"> Made with 💜 by <a href="https://github.com/elewon-hosting">Elewon Projects</a> </p> 
