@@ -14,12 +14,19 @@ function handle_error {
 trap handle_error ERR
 set -e
 source <(curl -sSL http://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/colors/colors.sh) > /dev/null 2>&1
-
 sudo apt update && sudo apt upgrade -y
 clear
-echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server...${NC}"
-sleep 1
-~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit
+echo -ne "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server${NC}"
+(
+  ~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit
+) &
+PID=$!
+while kill -0 $PID 2>/dev/null; do
+  for dots in "." ".." "..."; do
+    echo -ne "\r${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server$dots${NC}   "
+    sleep 0.5
+  done
+done
 clear
 sleep 1
 echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}Unturned Server Update Complete...${NC}"
