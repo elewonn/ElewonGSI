@@ -20,6 +20,13 @@ Feel free to fork, customize, or integrate the scripts into your own projects.
 
 We welcome issues, feedback, and pull requests to help improve the project.
 
+## 📦 Projects
+
+| Game       | Description                                         | Status      |
+|------------|-----------------------------------------------------|-------------|
+| 🟩 **Minecraft (Spigot,Bukkit)** | Automatic version selection + full setup | ✅ Stable     |
+| 🟥 **Unturned**           | Full Linux support with SteamCMD         | ✅ Stable     |
+
 ## ✨ Features
 - Simple and clean setup process
 - Supports popular games like Minecraft (more coming soon)
@@ -27,8 +34,18 @@ We welcome issues, feedback, and pull requests to help improve the project.
 - Ideal for hobbyists, developers, and server admins
 - Open Source
 
+## ❤️ Contributing
+**Want to contribute? Fork this repo or suggest improvements via issues.**
+**We welcome community feedback, translations, and script additions for new games!**
+
 ## 🖥️ Requirements
 - A Linux-based system (Ubuntu, Debian)
 - `bash` installed
 - `python3` installed
 - Internet connection
+
+## ⚖️ License
+This project is fully open source under the MIT License.
+All scripts are free to use, modify, or integrate into your own hosting solution.
+
+<p align="center"> Made with 💜 by <a href="https://github.com/elewon-hosting">Elewon Projects</a> </p> ```
