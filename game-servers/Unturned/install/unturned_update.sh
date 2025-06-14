@@ -20,5 +20,6 @@ clear
 echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server...${NC}"
 sleep 1
 ~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit
+clear
 sleep 1
 echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}Unturned Server Update Complete...${NC}"
