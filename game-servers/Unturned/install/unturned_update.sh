@@ -18,12 +18,12 @@ sudo apt update && sudo apt upgrade -y
 clear
 echo -ne "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server${NC}"
 (
-  ~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit
+  ~/Unturned/steamcmd/steamcmd.sh +login anonymous +app_update 1110390 +quit > /dev/null 2>&1
 ) &
 PID=$!
 while kill -0 $PID 2>/dev/null; do
   for dots in "." ".." "..."; do
-    echo -ne "\r${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server$dots${NC}   "
+    echo -ne "\r${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Updating Unturned Server$dots${NC}"
     sleep 0.5
   done
 done
