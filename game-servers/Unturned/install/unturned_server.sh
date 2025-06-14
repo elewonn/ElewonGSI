@@ -39,7 +39,6 @@ else
     echo -e "${RED}SteamCMD already exists, it is skipped.${NC}"
 fi
 sleep 1
-echo -ne "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Downloading Unturned server, Please wait! (AppID: 1110390)${NC}"
 (
   ~/Unturned/steamcmd/steamcmd.sh +login anonymous +force_install_dir ~/Unturned/unturned_server +app_update 1110390 validate +quit > /dev/null 2>&1
 ) &
@@ -50,7 +49,6 @@ while kill -0 $PID 2>/dev/null; do
     sleep 0.5
   done
 done
-echo -ne "\r${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}Unturned server download complete.${NC}\n"
 cd ~/Unturned/unturned_server > /dev/null 2>&1
 sudo wget https://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/game-servers/Unturned/install/start.sh > /dev/null 2>&1
 sudo chmod +x start.sh > /dev/null 2>&1
