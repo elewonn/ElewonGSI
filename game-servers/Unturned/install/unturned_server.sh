@@ -43,10 +43,10 @@ sleep 1
 echo -e "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Downloading Unturned server, Please wait! (AppID: 1110390)...${NC}"
 ~/Unturned/steamcmd/steamcmd.sh +login anonymous +force_install_dir ~/Unturned/unturned_server +app_update 1110390 validate +quit
 cd ~/Unturned/unturned_server > /dev/null 2>&1
-sudo wget https://get.elewon.net/steam/unturned/start.sh > /dev/null 2>&1
+sudo wget https://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/game-servers/Unturned/install/start.sh > /dev/null 2>&1
 sudo chmod +x start.sh > /dev/null 2>&1
 cd ~/Unturned > /dev/null 2>&1
-sudo wget https://get.elewon.net/steam/unturned/unturned_update.sh > /dev/null 2>&1
+sudo wget https://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/game-servers/Unturned/install/unturned_update.sh > /dev/null 2>&1
 sudo chmod +x unturned_update.sh > /dev/null 2>&1
 echo -e "${GRAY}[${GREEN}OK${GRAY}] ${LAVENDER_GRAY}The Unturned server has been downloaded successfully.${NC}"
 sleep 1
