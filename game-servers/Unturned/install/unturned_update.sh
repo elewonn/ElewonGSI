@@ -13,7 +13,7 @@ function handle_error {
 }
 trap handle_error ERR
 set -e
-source <(curl -sSL https://colors.get.elewon.net) > /dev/null 2>&1
+source <(curl -sSL http://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/colors/colors.sh) > /dev/null 2>&1
 
 sudo apt update && sudo apt upgrade -y
 clear
