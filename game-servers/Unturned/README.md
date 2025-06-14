@@ -27,7 +27,7 @@ This script installs all required dependencies, downloads the latest Unturned se
 
 ```bash
 # 🔽 Download the script
-wget https://get.elewon.net/steam/unturned/unturned_server.sh
+wget https://raw.githubusercontent.com/elewonn/ElewonGSI/refs/heads/main/game-servers/Unturned/install/unturned_server.sh
 
 # ✅ Make it executable
 sudo chmod +x unturned_server.sh
