@@ -23,6 +23,9 @@ This script installs all required dependencies, downloads the latest Unturned se
 
 ---
 
+> [!CAUTION]
+> When downloading the Unturned server, please wait until you see download successful. Do not stop the system.
+
 ## 🚀 Installation
 
 ```bash
