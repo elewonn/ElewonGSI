@@ -41,7 +41,7 @@ fi
 sleep 1
 echo -ne "${GRAY}[${YELLOW}INFO${GRAY}] ${LAVENDER_GRAY}Downloading Unturned server, Please wait! (AppID: 1110390)${NC}"
 (
-  ~/Unturned/steamcmd/steamcmd.sh +login anonymous +force_install_dir ~/Unturned/unturned_server +app_update 1110390 validate +quit
+  ~/Unturned/steamcmd/steamcmd.sh +login anonymous +force_install_dir ~/Unturned/unturned_server +app_update 1110390 validate +quit > /dev/null 2>&1
 ) &
 PID=$!
 while kill -0 $PID 2>/dev/null; do
